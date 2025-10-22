@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/usuario/docker-composer.yml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/usuario/docker-composer.yml" />
+              <option name="originalContent" value="version: '3.8'&#10;&#10;services:&#10;  postgres:&#10;    image: postgres:16&#10;    container_name: ms-usuario-db&#10;    environment:&#10;      POSTGRES_DB: ${DB_NOME}&#10;      POSTGRES_USER: ${DB_USUARIO}&#10;      POSTGRES_PASSWORD: ${DB_PASSWORD}&#10;    ports:&#10;      - &quot;5434:5432&quot;&#10;    volumes:&#10;      - gadata:/var/lib/postgresql/data&#10;&#10;volumes:&#10;  gadata:" />
+              <option name="updatedContent" value="version: '3.8'&#10;&#10;services:&#10;  postgres:&#10;    image: postgres:16&#10;    container_name: ms-usuario-db&#10;    environment:&#10;      POSTGRES_DB: ${DB_NOME}&#10;      POSTGRES_USER: ${DB_USUARIO}&#10;      POSTGRES_PASSWORD: ${DB_PASSWORD}&#10;    ports:&#10;      - &quot;5434:5432&quot;&#10;    volumes:&#10;      - gadata:/var/lib/postgresql/data&#10;&#10;volumes:&#10;  gadata:" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/usuario/src/main/resources/application.yml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/usuario/src/main/resources/application.yml" />
+              <option name="originalContent" value="spring:&#10;  application:&#10;    name: usuario&#10;&#10;  datasource:&#10;    url: ${DB_POSTGRES}&#10;    username: ${DB_USUARIO}&#10;    password: ${DB_PASSWORD}&#10;    driver-class-name: org.postgresql.Driver&#10;&#10;  jpa:&#10;    show-sql: true&#10;&#10;  flyway:&#10;    enabled: true&#10;    locations: classpath:db/migration&#10;    baseline-on-migrate: true&#10;    validate-on-migrate: true&#10;    schemas: public&#10;&#10;server:&#10;  port: 8080&#10;" />
+              <option name="updatedContent" value="spring:&#10;  application:&#10;    name: usuario&#10;&#10;  datasource:&#10;    url: ${DB_POSTGRES}&#10;    username: ${DB_USUARIO}&#10;    password: ${DB_PASSWORD}&#10;    driver-class-name: org.postgresql.Driver&#10;&#10;  jpa:&#10;    show-sql: true&#10;&#10;  flyway:&#10;    enabled: true&#10;    locations: classpath:db/migration&#10;    baseline-on-migrate: true&#10;    validate-on-migrate: true&#10;    schemas: public&#10;&#10;server:&#10;  port: 8080" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
