@@ -22,6 +22,8 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.AUTO)
     private UUID id;
+
     private String nome;
+
     private String email;
 }
